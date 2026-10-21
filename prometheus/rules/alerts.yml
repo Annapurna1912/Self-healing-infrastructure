@@ -1,0 +1,12 @@
+
+groups:
+  - name: self-healing-alerts
+    rules:
+      - alert: NginxExporterDown
+        expr: up{job="nginx"} == 0
+        for: 30s
+        labels:
+          severity: critical
+        annotations:
+          summary: "NGINX exporter is unavailable"
+          description: "Prometheus cannot scrape the NGINX exporter."

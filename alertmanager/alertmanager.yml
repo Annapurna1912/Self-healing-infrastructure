@@ -1,0 +1,16 @@
+
+
+route:
+  receiver: "default"
+  routes:
+    - matchers:
+        - alertname="NginxExporterDown"
+      receiver: "self-healing-webhook"
+
+receivers:
+  - name: "default"
+
+  - name: "self-healing-webhook"
+    webhook_configs:
+      - url: "http://recovery-service:5000/alert"
+        send_resolved: false
