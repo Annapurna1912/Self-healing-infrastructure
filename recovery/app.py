@@ -1,6 +1,7 @@
 
 from flask import Flask, request, jsonify
-import subprocess
+import subprocess 
+import logging
 
 app = Flask(__name__)
 
