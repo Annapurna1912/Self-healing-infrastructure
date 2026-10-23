@@ -1,5 +1,13 @@
 # 🛡️ Self-Healing Infrastructure
 
+![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED?logo=docker&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-Monitoring-E6522C?logo=prometheus&logoColor=white)
+![Alertmanager](https://img.shields.io/badge/Alertmanager-Alerting-orange)
+![Ansible](https://img.shields.io/badge/Ansible-Automation-EE0000?logo=ansible&logoColor=white)
+![Python](https://img.shields.io/badge/Python-Recovery_Service-3776AB?logo=python&logoColor=white)
+![NGINX](https://img.shields.io/badge/NGINX-Web_Server-009639?logo=nginx&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-Version_Control-181717?logo=github&logoColor=white)
+
 ### Automated Monitoring • Alerting • Recovery
 
 A containerized DevOps project that detects service failures, raises alerts, and automatically attempts recovery using **Prometheus, Alertmanager, Docker, Flask, and Ansible**.
